@@ -1,2 +1,2 @@
 # Kaggle-Competitions
-Repositories containing code from my Kaggle competitions
+Repository containing the code from my Kaggle competitions
