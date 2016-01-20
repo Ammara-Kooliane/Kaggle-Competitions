@@ -20,5 +20,17 @@ Address - the approximate street address of the crime incident
 X - Longitude
 Y - Latitude
 
-## 2) The folder
+## 2) The files
 
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Script1_LDA.R
+Contains the first submission to the Kaggle website. The model used is linear discriminant analysis (LDA) with bagging technique.
+Logloss score shows that bagging technique on the LDA model does not make a big difference.
+
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Script2_LDA_multinom.R
+Contains the second submission to the Kaggle website. The model used is logitic regression via neural networks (multinom function) and with the bagging technique. Score was better with the bagging technique on the multinom model than without.
+
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Script3_Ggplot2.R
+Contains the graph script used to analyze the features and output.
+
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Trials.R
+This files contains all the trials for other models than LDA and multinom like random forest which score was worst or glmnet which I was unable to finish due to memory constrains.
