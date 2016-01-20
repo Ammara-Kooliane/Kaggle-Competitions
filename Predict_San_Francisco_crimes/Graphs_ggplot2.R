@@ -1,3 +1,7 @@
+library(lubridate)
+library(scales)
+library(ggplot2)
+
 set.seed(42)
 train <- read.csv("train.csv")
 
@@ -6,54 +10,33 @@ train$Year <- year(train$Dates) # Extrating the year variable from Dates
 train$Month <- month(train$Dates)
 train$Day <- day(train$Dates)
 train$Hour <- hour(train$Dates)
-
 train$x <- round(train$X,2)
 train$y <- round(train$Y,2)
 
-replace <- function(dataframe, vector) {
-        train$Category <- as.character(train$Category)
-        dataframe$Cat <- dataframe$Category
-        for (i in vector) {
-                dataframe$Cat[which(dataframe$Cat == i)] <- "OTHER OFFENSES"
-        
-        }
-        return(dataframe)
-        train$Category <- as.factor(train$Category)
-        train$Cat <- as.factor(train$Cat)
-}   
-categories <- c("BAD CHECKS", "BRIBERY","EXTORTION", "SEX OFFENSES NON FORCIBLE", "GAMBLING",  "PORNOGRAPHY/OBSCENE MAT","TREA")
-train <- replace(train,categories)
+par(mar=c(5.1, 4.1, 4.1, 7.1))
+s <- ggplot(train, aes(x = Hour)) + geom_bar(aes(fill = Category), position = 'fill') + guides(fill=guide_legend(ncol=2))
+#Plotting crimes frequency by year. Legend in 2 columns.
 
-inTrain<-createDataPartition(train$Category,p=0.6,list=F)
-train.sub<-train[inTrain,]
-test.sub <- train[-inTrain,]
+par(mar=c(5.1, 4.1, 4.1, 7.1))
+train_cat_year <- count(train, c("Year", "Category"))
+q <- ggplot(data=train_cat_year, aes(x=Year, y = freq, group=Category, colour=Category), environment = environment()) +
+        geom_line() +
+        geom_point()
 
-fit <- randomForest(as.factor(Cat) ~ PdDistrict + DayOfWeek + Year + Month + Day + Hour + x + y, data=train.sub, ntree=50, mtry = 2)
-Prediction <- predict(fit, test.sub, OOB=TRUE, type = "prob")
+train_cat_hour <- count(train, c("Hour", "Category"))
+r <- ggplot(data=train_cat_hour, aes(x=Hour, y = freq, group=Category, colour=Category), environment = environment()) +
+        geom_line() +
+        geom_point()
 
-dummies <- function(dataframe, vector) {
-        vector <- as.character(unique(vector))
-        vector <- sort(vector)
-        for (i in vector) {
-                dataframe[i] <- 0
-                dataframe[which(dataframe$Cat == i), i] <- 1
-        }
-        return (dataframe)
-}
+train_cat_dist <- count(train, c("PdDistrict", "Category"))
+s <- ggplot(data=train_cat_dist, aes(x=PdDistrict, y = freq, group=Category, colour=Category), environment = environment()) +
+        geom_line() +
+        geom_point()
 
-test.dummies <- dummies(test.sub, test.sub$Cat)
-test.dummies <- test.dummies[-c(1:16)]
+train_cat_dist <- count(train_sub1, c("Addstreet", "Category"))
+t <- ggplot(data=train_cat_dist, aes(x=Addstreet, y = freq, group=Category, colour=Category), environment = environment()) +
+        geom_line() +
+        geom_point()
 
-MultiLogLoss <- function(act, pred)
-{
-        eps = 1e-15;
-        nr <- nrow(pred)
-        pred = matrix(sapply( pred, function(x) max(eps,x)), nrow = nr)      
-        pred = matrix(sapply( pred, function(x) min(1-eps,x)), nrow = nr)
-        ll = sum(act*log(pred) + (1-act)*log(1-pred))
-        ll = ll * -1/(nrow(act))      
-        return(ll);
-}
-
-MultiLogLoss(test.dummies, Prediction)
-#9
+v <- ggplot(data=train_sub1, aes(x=PdDistrict, group=Addstreet, colour=Addstreet), environment = environment()) +
+        geom_bar() 
