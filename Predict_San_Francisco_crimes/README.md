@@ -27,7 +27,7 @@ Contains the first submission to the Kaggle website. The model used is linear di
 Logloss score shows that bagging technique on the LDA model does not make a big difference.
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Script2_LDA_multinom.R
-Contains the second submission to the Kaggle website. The model used is logitic regression via neural networks (multinom function) and with the bagging technique. Score was better with the bagging technique on the multinom model than without.
+Contains the second submission to the Kaggle website. The model used is multinomial classification via neural networks (multinom function) and with the bagging technique. Score was better with the bagging technique on the multinom model than without.
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Script3_Ggplot2.R
 Contains the graph script used to analyze the features and output.
