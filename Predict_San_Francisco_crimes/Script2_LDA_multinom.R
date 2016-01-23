@@ -58,7 +58,7 @@ feature_eng <- function(train_df, test_df) {
         # afternoon (14h-20th)and night(20h-5h) 
         data$Period_day <- as.factor(ifelse((data$Hour >= 5) & (data$Hour < 14), 1, 
                                             ifelse((data$Hour >=14) & (data$Hour <20), 2, 
-                                            ifelse((data$Hour >=20) & (data$Hour <5), 3, 4)))) 
+                                            ifelse((data$Hour >=20) | (data$Hour <5), 3)))) 
             
         # Creating a new variable Week_day (1 for a crime during the weekdays and 0 otherwise) 
         data$Week_day <- as.factor(ifelse((data$DayOfWeek == "Saturday") | (data$DayOfWeek == "Sunday"), 0, 1)) 
