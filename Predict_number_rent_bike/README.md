@@ -41,7 +41,7 @@ This script contains the graphs that help understand and explore the data.
 * Plot2_temperature_vs_bike_rent.png => Plot of the number of rented bikes vs the temperature
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 3_SVM_and_performance.R
-The model used in this script is the svm and is described in that script.
+The model used is the svm and is described in that script.
 
 The graph of the measured performance has been added: 3_Plot_prediction_vs_reality.png => which compares the predicted number of bike rented vs the reality
 
