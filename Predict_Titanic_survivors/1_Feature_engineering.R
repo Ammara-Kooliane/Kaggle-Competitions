@@ -5,6 +5,11 @@ set.seed(415)
 train <- read.csv("../input/train.csv")
 test <- read.csv("../input/test.csv")
 
+# Goal:         (1) Fix missing values
+#               (2) Fix data structures
+#
+# Output:       (1) A single dataframe combining the engineered train and test sets
+
 feature_eng <- function(train_df, test_df) {
         # Combining the train and test sets for purpose engineering
         test_df$Survived <- NA
