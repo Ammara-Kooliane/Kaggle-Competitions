@@ -1,37 +1,34 @@
-# Titanic: Machine Learning from Disaster
-## Predict survival on the Titanic 
+# Predict the number of bike rent from a sharing bike system
 
-In this challenge, we are asked to complete the analysis of what sorts of people were likely to survive. 
+In this challenge, we are asked to predict the number of bike rent per hour in the city (count variable). 
 
 ## 1) The Data
+The data file comes in a unique file and contains information from a sharing bike system in a city.
 
 VARIABLE DESCRIPTIONS:
-* survival        Survival (0 = No; 1 = Yes)
-* pclass          Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
-* name            Name
-* sex             Sex
-* age             Age
-* sibsp           Number of Siblings/Spouses Aboard
-* parch           Number of Parents/Children Aboard
-* ticket          Ticket Number
-* fare            Passenger Fare
-* cabin           Cabin
-* embarked        Port of Embarkation
-                (C = Cherbourg; Q = Queenstown; S = Southampton)
+* datetime - date and hour
+* season - 1 = spring , 2 = summer, 3 = fall, 4 = winter
+* holiday – is it a school holiday?
+* workingday - is it a working day?
+* weather - 1: bright to cloudy, 2 : smoggy, 3 : light rain or snow, 4 : heavy rain or snow 
+* temp – temperature (Celsius) 
+* atemp – temperature perceived (Celsius) 
+* humidity – humidity rate 
+* windspeed – windspeed 
+* casual - number of bike rent from unregistered clients
+* registered – number of bike rent from registered clients 
+* count – total number of bike rent
 
-SPECIAL NOTES:
-Pclass is a proxy for socio-economic status (SES)
- 1st ~ Upper; 2nd ~ Middle; 3rd ~ Lower
+## 2) The process to the prediction 
+* 1st step: Observation et analysis of the data (variable strutures and simple statistical analyses) to get familiar with and identify the missing values
+* 2nd step: Identify the variables that best explain and predict the variable count
+* 3rd step : graph illustrations to help confirming or informing the best variables
+* 4th step : Chose a learning method that is relevant to the type of prediction and variable predictors => SVM model chosen
+* 5th step : Split the data into a train and test sets to measure the performance of the model chosen. 
+* 6th step : performance measure from the learner.
+* 7th step : How to improve the performance of the prediction?
 
-Age is in Years; Fractional if Age less than One (1)
- If the Age is Estimated, it is in the form xx.5
-
-* Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
-* Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
-* Parent:   Mother or Father of Passenger Aboard Titanic
-* Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
-
-## 2) The files
+## 3) The files
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Feature_engineering.R
 Contains the function doing feature engineering on the train and test sets. Fixes missing values and data strutures.
