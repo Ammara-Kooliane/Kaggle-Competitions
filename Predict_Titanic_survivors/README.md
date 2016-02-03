@@ -33,9 +33,9 @@ Age is in Years; Fractional if Age less than One (1)
 
 ## 2) The files
 
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Script1_LDA.R
-Contains the first submission to the Kaggle website. The model used is linear discriminant analysis (LDA) with bagging technique.
-Logloss score shows that bagging technique on the LDA model does not make a big difference.
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Random_Forest.R
+Contains the first submission to the Kaggle website. The model used is a simple random forest after feature engineering.
+Score was still to be increased with other modeling
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Script2_LDA_multinom.R
 Contains the second submission to the Kaggle website. The model used is multinomial classification via neural networks (multinom function) and with the bagging technique. Score was better with the bagging technique on the multinom model than without.
