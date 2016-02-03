@@ -1,23 +1,20 @@
 # Titanic: Machine Learning from Disaster
 ## Predict survival on the Titanic 
 
-In this challenge, we are asked to complete the analysis of what sorts of people were likely to survive. 
+In this challenge, we are asked to predict the number of rent bikes per hour in the city (count variable). 
 
 ## 1) The Data
 
 VARIABLE DESCRIPTIONS:
-* survival        Survival (0 = No; 1 = Yes)
-* pclass          Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
-* name            Name
-* sex             Sex
-* age             Age
-* sibsp           Number of Siblings/Spouses Aboard
-* parch           Number of Parents/Children Aboard
-* ticket          Ticket Number
-* fare            Passenger Fare
-* cabin           Cabin
-* embarked        Port of Embarkation
-                (C = Cherbourg; Q = Queenstown; S = Southampton)
+* datetime - date and hour
+* season - 1 = spring , 2 = summer, 3 = fall, 4 = winter
+* holiday – is it a school holiday?
+* workingday - is it a working day?
+* weather - 1: bright to cloudy, 2 : smoggy, 3 : light rain or snow, 4 : heavy rain or snow 
+* temp – temperature (Celsius) 
+* atemp – temperature perceived (Celsius) 
+* humidity – humidity rate 
+* windspeed – windspeed casual - nombre de locations d’usagers non abonnés registered – nombre de locations d’usagers abonnés count – nombre total de locations de vélos
 
 SPECIAL NOTES:
 Pclass is a proxy for socio-economic status (SES)
