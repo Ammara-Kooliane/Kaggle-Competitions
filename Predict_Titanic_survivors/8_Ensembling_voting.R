@@ -1,4 +1,4 @@
-# Combine Predictions of conditional random forest, gbm, adaboost, svm and xgboost into a unique one
+# Combine Predictions of conditional inference trees, gbm, adaboost, svm and xgboost into a unique one
 
 # Source our engineered data
 source("1_Feature_engineering.R")
