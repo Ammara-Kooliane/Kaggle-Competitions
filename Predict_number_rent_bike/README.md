@@ -1,6 +1,6 @@
 # Predict the number of bike rented from a sharing bike system
 
-In this challenge, we are asked to predict the number of bike rented per hour in the city (count variable). 
+In this challenge, we are asked to predict the number of rented bike per hour in the city (count variable). 
 
 ## 1) The Data
 The data file comes in a unique file and contains information from a sharing bike system in a city.
@@ -15,9 +15,9 @@ VARIABLE DESCRIPTIONS:
 * atemp – temperature perceived (Celsius) 
 * humidity – humidity rate 
 * windspeed – windspeed 
-* casual - number of bike rented from unregistered clients
+* casual - number of rented bike from unregistered clients
 * registered – number of bike rented from registered clients 
-* count – total number of bike rented
+* count – total number of rented bike
 
 ## 2) The process to the prediction and performance measure
 * 1st step: Observation et analysis of the data (variable strutures and simple statistical analyses) to get familiar with and identify the missing values
@@ -37,11 +37,11 @@ Contains the analysis script that explore the data as well as feature engineerin
 This script contains the graphs that help understand and explore the data.
 
 2 graphs have been added: 
-* Plot1_bike_rent_per_hour.png => Plot of the number of rented bikes vs the day hour
-* Plot2_temperature_vs_bike_rent.png => Plot of the number of rented bikes vs the temperature
+* Plot1_bike_rent_per_hour.png => Plot of the number of rented bike vs the day hour
+* Plot2_temperature_vs_bike_rent.png => Plot of the number of rented bike vs the temperature
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 3_SVM_and_performance.R
 The model used is the svm and is described in that script.
 
-The graph of the measured performance has been added: 3_Plot_prediction_vs_reality.png => which compares the predicted number of bike rented vs the reality
+The graph of the measured performance has been added: 3_Plot_prediction_vs_reality.png => which compares the predicted number of reanted bike vs the reality
 
