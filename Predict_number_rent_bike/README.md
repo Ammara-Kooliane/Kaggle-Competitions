@@ -30,14 +30,14 @@ VARIABLE DESCRIPTIONS:
 
 ## 3) The files
 
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Feature_engineering.R
-Contains the function doing feature engineering on the train and test sets. Fixes missing values and data strutures.
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Analysis_script.R
+Contains the analysis script that explore the data as well as feature engineering.
 
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 2_Random_Forest.R
-Contains the first submission to the Kaggle website. The model used is a simple random forest after feature engineering using 1_Feature_engineering.R. Score using accuracy has still to be increased with the following models. 
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 2_Graph_script.R
+This script contains the graphs that help understand and explore the data.
 
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 3_Conditional_Inference_trees.R
-After feature engineering, the model used in this script is the conditional inference trees model. This is what gives the current most highest score. 
+###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 3_SVM_and_performance.R
+The model used in this script is the conditional inference trees model. This is what gives the current most highest score. 
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) 4_svm.R
 Since SVM is very in trend at the moment, the model was used but did not give the best accuracy. Different boosting methods were then used to improve it.
