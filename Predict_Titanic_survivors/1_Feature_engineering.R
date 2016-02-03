@@ -5,8 +5,8 @@ set.seed(415)
 train <- read.csv("../input/train.csv")
 test <- read.csv("../input/test.csv")
 
-# Goal:         (1) Fix missing values
-#               (2) Fix data structures
+# Goal:         (1) Fixing missing values
+#               (2) Fixing data structures
 #
 # Output:       (1) A single dataframe combining the engineered train and test sets
 
