@@ -1,10 +1,10 @@
 # Titanic competition script using the gradient boosting method
 
 library(gbm)
-library(rpart)
 
 set.seed(415)
 
+# Source our data and clean it
 source("1_Feature_engineering.R")
 
 # Splitting back to the train and test sets
