@@ -1,5 +1,4 @@
-# Titanic: Machine Learning from Disaster
-## Predict survival on the Titanic 
+# Predict the number of bike rent from a sharing bike system
 
 In this challenge, we are asked to predict the number of bike rent per hour in the city (count variable). 
 
@@ -20,7 +19,20 @@ VARIABLE DESCRIPTIONS:
 * registered – number of bike rent from registered clients 
 * count – total number of bike rent
 
-
+## 2) The work
+* 1st step : 1ère étape : Observation et analyse de l'ensemble des données (structure des variables,
+nombre total de lignes, analyses statistiques simples) permettant la compréhension des
+données ainsi que l'identification celles manquantes.
+2ème étape : Réflexion préalable (mais subjective) permettant d'identifier les variables les
+plus pertinentes dans la modélisation et la prédiction du nombre de vélos par heure.
+3ème étape : Illustration par des graphiques confirmant ou infirmant les hypothèses issues
+de la réflexion préalable.
+4ème étape : Choix d'un modèle prédictif au vu des données et de l'objectif demandé.
+5ème étape : Partition de l'ensemble en 2 sous-ensembles afin de mesurer la performance
+du modèle choisi. Génération d'un premier modèle.
+6ème étape : Mesure de la performance de ce modèle.
+7ème étape : Réflexion sur les axes d'amélioration possibles permettant une meilleure
+prédiction du nombre de vélos loués par heure.
 ## 2) The files
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Feature_engineering.R
