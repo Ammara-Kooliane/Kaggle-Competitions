@@ -9,14 +9,14 @@ VARIABLE DESCRIPTIONS:
 * survival        Survival (0 = No; 1 = Yes)
 * pclass          Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
 * name            Name
-sex             Sex
-age             Age
-sibsp           Number of Siblings/Spouses Aboard
-parch           Number of Parents/Children Aboard
-ticket          Ticket Number
-fare            Passenger Fare
-cabin           Cabin
-embarked        Port of Embarkation
+* sex             Sex
+* age             Age
+* sibsp           Number of Siblings/Spouses Aboard
+* parch           Number of Parents/Children Aboard
+* ticket          Ticket Number
+* fare            Passenger Fare
+* cabin           Cabin
+* embarked        Port of Embarkation
                 (C = Cherbourg; Q = Queenstown; S = Southampton)
 
 SPECIAL NOTES:
@@ -26,10 +26,10 @@ Pclass is a proxy for socio-economic status (SES)
 Age is in Years; Fractional if Age less than One (1)
  If the Age is Estimated, it is in the form xx.5
 
-Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
-Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
-Parent:   Mother or Father of Passenger Aboard Titanic
-Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
+* Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
+* Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
+* Parent:   Mother or Father of Passenger Aboard Titanic
+* Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
 
 ## 2) The files
 
