@@ -19,21 +19,16 @@ VARIABLE DESCRIPTIONS:
 * registered – number of bike rent from registered clients 
 * count – total number of bike rent
 
-## 2) The work
-* 1st step : 1ère étape : Observation et analyse de l'ensemble des données (structure des variables,
-nombre total de lignes, analyses statistiques simples) permettant la compréhension des
-données ainsi que l'identification celles manquantes.
-2ème étape : Réflexion préalable (mais subjective) permettant d'identifier les variables les
-plus pertinentes dans la modélisation et la prédiction du nombre de vélos par heure.
-3ème étape : Illustration par des graphiques confirmant ou infirmant les hypothèses issues
-de la réflexion préalable.
-4ème étape : Choix d'un modèle prédictif au vu des données et de l'objectif demandé.
-5ème étape : Partition de l'ensemble en 2 sous-ensembles afin de mesurer la performance
-du modèle choisi. Génération d'un premier modèle.
-6ème étape : Mesure de la performance de ce modèle.
-7ème étape : Réflexion sur les axes d'amélioration possibles permettant une meilleure
-prédiction du nombre de vélos loués par heure.
-## 2) The files
+## 2) The process to the prediction 
+* 1st step: Observation et analysis of the data (variable strutures and simple statistical analyses) to get familiar with and identify the missing values
+* 2nd step: Identify the variables that best explain and predict the variable count
+* 3rd step : graph illustrations to help confirming or informing the best variables
+* 4th step : Chose a learning method that is relevant to the type of prediction and variable predictors => SVM model chosen
+* 5th step : Split the data into a train and test sets to measure the performance of the model chosen. 
+* 6th step : performance measure from the learner.
+* 7th step : How to improve the performance of the prediction?
+
+## 3) The files
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Feature_engineering.R
 Contains the function doing feature engineering on the train and test sets. Fixes missing values and data strutures.
