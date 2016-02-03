@@ -1,6 +1,6 @@
-# Predict the number of bike rent from a sharing bike system
+# Predict the number of bike rented from a sharing bike system
 
-In this challenge, we are asked to predict the number of bike rent per hour in the city (count variable). 
+In this challenge, we are asked to predict the number of bike rented per hour in the city (count variable). 
 
 ## 1) The Data
 The data file comes in a unique file and contains information from a sharing bike system in a city.
@@ -15,9 +15,9 @@ VARIABLE DESCRIPTIONS:
 * atemp – temperature perceived (Celsius) 
 * humidity – humidity rate 
 * windspeed – windspeed 
-* casual - number of bike rent from unregistered clients
-* registered – number of bike rent from registered clients 
-* count – total number of bike rent
+* casual - number of bike rented from unregistered clients
+* registered – number of bike rented from registered clients 
+* count – total number of bike rented
 
 ## 2) The process to the prediction 
 * 1st step: Observation et analysis of the data (variable strutures and simple statistical analyses) to get familiar with and identify the missing values
