@@ -4,11 +4,11 @@
 source("1_Feature_engineering.R")
 
 # Source our models
-source("3_Conditional_Inference_trees.R")
-source("4_svm.R")
-source("5_Boosting.R")
-source("6_Adaboost.R")
-source("7_Xgboost.R")
+source("3_Conditional_Inference_trees.R") # Gives Prediction prediction
+source("4_svm.R") # Gives prediction_svm_test prediction
+source("5_Boosting.R") # Gives predict_gbm_test prediction
+source("6_Adaboost.R") # Gives predict_maboost_test prediction
+source("7_Xgboost.R") # Gives predict_xgboost_test prediction
 
 # Combine predictions
 vote_test <- 0
@@ -21,11 +21,11 @@ head(as.numeric(predict_maboost_test)-1, n = 30)
 head(as.numeric(prediction_svm_test), n = 30)
 head(as.numeric(predict_xgboost_test), n = 30)
 
-# 1 is 0 
-# 2 is 0
-# 3 is 1
-# 4 is 1
-# 5 is 1
+# 1 means only 1 model has predicted a survival. It is converted to 0 
+# 2 means only 2 models have predicted a survival. It is converted to 0  
+# 3 means 3 models have predicted a survival. It is converted to 1
+# 4 means 4 models have predicted a survival. It is converted to 1
+# 5 means all have predicted a survival. It is converted to 1
 
 combined_test <- vote_test
 combined_test[combined_test <= 2] <- 0
@@ -35,5 +35,4 @@ head(combined_test, n = 30)
 # Creating the submitting file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = combined_test)
 write.csv(submit, file = "secondensemble.csv", row.names = FALSE)
-#First ensemble: 0.80383
-#second ensemble: 0.81340, same as the conditional random forest alone
+# Second ensemble: 0.81340, same score as the conditional inference trees model alone
