@@ -1,7 +1,6 @@
 # Titanic competition script using the random forest model
 
 library(randomForest)
-library(rpart)
 
 set.seed(415)
 
