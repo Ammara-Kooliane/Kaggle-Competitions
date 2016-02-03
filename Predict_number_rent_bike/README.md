@@ -19,7 +19,7 @@ VARIABLE DESCRIPTIONS:
 * registered – number of bike rented from registered clients 
 * count – total number of bike rented
 
-## 2) The process to the prediction 
+## 2) The process to the prediction and performance measure
 * 1st step: Observation et analysis of the data (variable strutures and simple statistical analyses) to get familiar with and identify the missing values
 * 2nd step: Identify the variables that best explain and predict the variable count
 * 3rd step : graph illustrations to help confirming or informing the best variables
@@ -36,20 +36,10 @@ Contains the analysis script that explore the data as well as feature engineerin
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 2_Graph_script.R
 This script contains the graphs that help understand and explore the data.
 
+2 graphs have been added: 
+* Plot1_bike_rent_per_hour.png Plot of the number of rented bikes vs the day hour
+* Plot2_temperature_vs_bike_rent.png Plot of the number of rented bikes vs the temperature
+
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) 3_SVM_and_performance.R
-The model used in this script is the conditional inference trees model. This is what gives the current most highest score. 
+The model used in this script is the svm and is described in that script.
 
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) 4_svm.R
-Since SVM is very in trend at the moment, the model was used but did not give the best accuracy. Different boosting methods were then used to improve it.
-
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) 5_Boosting.R
-Boosting methods are known to be very powerful. This script contains the first boosting model using the gbm package. Score is high but not as high as the contitional inference trees model.
-
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f) 6_Adaboost.R
-This script contains the second boosting model using the maboost package. Score is also high but not as high as the contitional inference trees model.
-
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; g) 7_Xgboost.R
-This script contains the third boosting model using the xgboost package. Score is also high but not as high as the contitional inference trees model.
-
-###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h) 8_Ensembling_voting.R
-Ensembling the different learners can also improve the accuracy of the prediction. This was done using voting on the conditional inference trees, gbm, adaboost, svm and xgboost. Unfortunately, it gave the same best score as the conditional inference trees model alone.
