@@ -4,7 +4,7 @@ library(randomForest)
 
 set.seed(415)
 
-# Source our data and clean it
+# Source our engineered data
 source("1_Feature_engineering.R")
 
 # Splitting back to the train and test sets
