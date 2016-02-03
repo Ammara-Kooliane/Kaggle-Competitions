@@ -6,11 +6,11 @@ In this challenge, we are asked to complete the analysis of what sorts of people
 ## 1) The Data
 
 VARIABLE DESCRIPTIONS:
-&nbsp;survival        Survival
-&nbsp;                (0 = No; 1 = Yes)
-&nbsp;pclass          Passenger Class
-&nbsp;                (1 = 1st; 2 = 2nd; 3 = 3rd)
-&nbsp;name            Name
+*survival        Survival
+              (0 = No; 1 = Yes)
+*pclass          Passenger Class
+             (1 = 1st; 2 = 2nd; 3 = 3rd)
+*name            Name
 sex             Sex
 age             Age
 sibsp           Number of Siblings/Spouses Aboard
