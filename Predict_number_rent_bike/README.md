@@ -1,9 +1,10 @@
 # Titanic: Machine Learning from Disaster
 ## Predict survival on the Titanic 
 
-In this challenge, we are asked to predict the number of rent bikes per hour in the city (count variable). 
+In this challenge, we are asked to predict the number of bike rent per hour in the city (count variable). 
 
 ## 1) The Data
+The data file comes in a unique file and contains information from a sharing bike system in a city.
 
 VARIABLE DESCRIPTIONS:
 * datetime - date and hour
@@ -14,19 +15,11 @@ VARIABLE DESCRIPTIONS:
 * temp – temperature (Celsius) 
 * atemp – temperature perceived (Celsius) 
 * humidity – humidity rate 
-* windspeed – windspeed casual - nombre de locations d’usagers non abonnés registered – nombre de locations d’usagers abonnés count – nombre total de locations de vélos
+* windspeed – windspeed 
+* casual - number of bike rent from unregistered clients
+* registered – number of bike rent from registered clients 
+* count – total number of bike rent
 
-SPECIAL NOTES:
-Pclass is a proxy for socio-economic status (SES)
- 1st ~ Upper; 2nd ~ Middle; 3rd ~ Lower
-
-Age is in Years; Fractional if Age less than One (1)
- If the Age is Estimated, it is in the form xx.5
-
-* Sibling:  Brother, Sister, Stepbrother, or Stepsister of Passenger Aboard Titanic
-* Spouse:   Husband or Wife of Passenger Aboard Titanic (Mistresses and Fiances Ignored)
-* Parent:   Mother or Father of Passenger Aboard Titanic
-* Child:    Son, Daughter, Stepson, or Stepdaughter of Passenger Aboard Titanic
 
 ## 2) The files
 
