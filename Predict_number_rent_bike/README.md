@@ -32,6 +32,7 @@ VARIABLE DESCRIPTIONS:
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) 1_Analysis_script.R
 Contains the analysis script that explore the data as well as feature engineering.
+In this file, we also check that the relation between the explanatory variables and the output variable is not linear.
 
 ###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) 2_Graph_script.R
 This script contains the graphs that help understand and explore the data.
